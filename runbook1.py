@@ -6,7 +6,7 @@ from nornir_utils.plugins.functions import print_result as pr
 nr = InitNornir(config_file="config.yaml")
 
 def uptime(task):
-     task.run(task=netmiko_send_command, command_string="show configuration system hostname")
+     task.run(task=netmiko_send_command, command_string="show configuration system host-name")
 
 result = nr.run(task=uptime)
 pr(result)
