@@ -1,4 +1,4 @@
-rom nornir import InitNornir
+from nornir import InitNornir
 from nornir_netmiko.tasks import netmiko_send_command
 from rich import print as rp
 from nornir_utils.plugins.functions import print_result as pr
